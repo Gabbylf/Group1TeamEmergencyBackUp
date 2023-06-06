@@ -222,7 +222,13 @@ button{
   }
 
   img{
-    width: 70px;
-    height: 70px;
+    width: 300px;
+    height: 300px;
   }
 
+#continue-button{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
+}
