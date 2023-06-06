@@ -1,0 +1,228 @@
+#graphic {
+    background-color:rgb(181, 97, 89);
+    width: 100%;
+}
+
+#diagnosis{
+    margin: auto; 
+    margin-top: 300px;  
+    width: 50%; 
+
+
+}
+
+#diagnosis-2{
+    margin: auto;
+    font-size: 50px;
+    width: fit-content;
+
+}
+
+h2{
+    margin: auto;
+    width: fit-content;
+    font-size: 70px;
+
+   
+}
+
+#diagnosis-3 {
+    margin: auto;
+    width: fit-content;
+    margin-top: 100px;  
+  
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(181, 97, 89);
+
+  }
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/human.png");
+    background-size: contain, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(181, 97, 89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* about section */
+#about {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color:rgb(216, 179, 176);
+}
+
+#about p{
+    font-size: 20px;
+}
+#about dl{
+    font-size: 20px;
+}
+
+/* make tabs with the graphic buttons */
+.tab {
+    display: flex;
+    margin: 0px 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.explanation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.symptoms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.symptoms img{
+    margin: 10px;
+}
+
+button {
+    font-size: 15px;
+    margin: 50px;
+    height: 21px;
+}
+
+#continue {
+    position: absolute;
+    margin: 0px;
+    right: 50px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+
+
+}
+#fff{
+    color: aqua;
+}
+/* animation section */
+#animation {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/human-body.gif");
+    background-size: contain, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main p {
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color:rgb(232, 179, 176);
+}
+
+#sources {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color:rgb(216, 179, 176);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(223, 171, 167);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .transparent-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 300px;
+  }
+  
+/* how to use flexbox: https://www.w3schools.com/css/css3_flexbox_container.asp */
+
+/* the entire div */
+#diagnosis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* "You got Hepatitis A" */
+#uh-oh{
+    text-align: center;
+    animation-name: uh-oh;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 200px;
+    font-weight: 300;
+}
+
+@keyframes uh-oh {
+    from {font-size: 50px;
+    opacity: 1000;}
+    to {font-size: 100px;
+    opacity: 1000;}
+}
+
+button{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+     transition: transform .7s ease-in-out;
+
+  }
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+
